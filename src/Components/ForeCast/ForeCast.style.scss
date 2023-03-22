@@ -1,0 +1,25 @@
+.Forecast-Container {
+  .Title {
+    color: #fff;
+    font-size: 21px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+  }
+  .Forecast-Wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 2rem;
+    color: #fff;
+
+    .Forecast-Details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 767px) {
+        display: unset;
+      }
+
+  }
+}

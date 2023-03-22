@@ -1,0 +1,90 @@
+.Home-Container {
+  .Home-Wrapper {
+    .Header-Container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      input {
+        width: 230px;
+        height: 36px;
+        border: none;
+        margin: 22px 0;
+        border-radius: 4px;
+        padding-left: 10px;
+
+        &:focus {
+          border: none;
+        }
+      }
+
+      .Icon {
+        cursor: pointer;
+      }
+    }
+
+    .Time-Container {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+    }
+    .Current-Weather-Container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .Location {
+        text-align: center;
+        padding: 2.5rem 0rem 1.5rem 0;
+        color: #fff;
+        font-size: 22px;
+      }
+
+      .Description {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .Current-Weather-Wrapper {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+
+        @media (max-width: 767px) {
+          gap: 2rem;
+        }
+
+        .Icon-Wrapper {
+          color: #fff;
+        }
+
+        .Weather-Wrapper {
+          font-size: 36px;
+          color: #fff;
+        }
+
+        .Details {
+          .Details-Wrapper {
+            color: #fff;
+            display: flex;
+            gap: 5px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #2344ba;
+  height: 100vh;
+
+  @media (max-width: 767px) {
+    height: 100%;
+  }
+}
